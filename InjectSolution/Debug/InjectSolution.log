@@ -1,0 +1,19 @@
+﻿Build started 2015/3/5 15:39:49.
+Project "D:\用户目录\Documents\GitHub\InjectSolution\InjectSolution\InjectSolution.vcxproj" on node 2 (Build target(s)).
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\InjectSolution.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+  stdafx.cpp
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\InjectSolution.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt InjectSolution.cpp
+  InjectSolution.cpp
+ResourceCompile:
+  C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug\InjectSolution.res" InjectSolution.rc 
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\用户目录\Documents\GitHub\InjectSolution\Debug\InjectSolution.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\用户目录\Documents\GitHub\InjectSolution\Debug\InjectSolution.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\用户目录\Documents\GitHub\InjectSolution\Debug\InjectSolution.lib" /MACHINE:X86 Debug\InjectSolution.res
+  Debug\InjectSolution.obj
+  Debug\stdafx.obj
+  InjectSolution.vcxproj -> D:\用户目录\Documents\GitHub\InjectSolution\Debug\InjectSolution.exe
+Done Building Project "D:\用户目录\Documents\GitHub\InjectSolution\InjectSolution\InjectSolution.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.93

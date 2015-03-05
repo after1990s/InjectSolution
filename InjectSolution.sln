@@ -5,6 +5,13 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InjectSolution", "InjectSolution\InjectSolution.vcxproj", "{BB2A2814-41ED-4466-B477-E5CE9D11676D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A407A6CA-2F26-426B-B18F-360774268EBF}"
+	ProjectSection(SolutionItems) = preProject
+		README.txt = README.txt
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RegisterInject", "RegisterInject\RegisterInject.vcxproj", "{17CF26AF-C940-459C-B81B-66E1E598D5D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -15,6 +22,10 @@ Global
 		{BB2A2814-41ED-4466-B477-E5CE9D11676D}.Debug|Win32.Build.0 = Debug|Win32
 		{BB2A2814-41ED-4466-B477-E5CE9D11676D}.Release|Win32.ActiveCfg = Release|Win32
 		{BB2A2814-41ED-4466-B477-E5CE9D11676D}.Release|Win32.Build.0 = Release|Win32
+		{17CF26AF-C940-459C-B81B-66E1E598D5D2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{17CF26AF-C940-459C-B81B-66E1E598D5D2}.Debug|Win32.Build.0 = Debug|Win32
+		{17CF26AF-C940-459C-B81B-66E1E598D5D2}.Release|Win32.ActiveCfg = Release|Win32
+		{17CF26AF-C940-459C-B81B-66E1E598D5D2}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
