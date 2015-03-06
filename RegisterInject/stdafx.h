@@ -19,3 +19,5 @@
 #include <string.h>
 
 // TODO: reference additional headers your program requires here
+#define MAX_LOADSTRING 100
+TCHAR szDll[MAX_LOADSTRING] = _T("D:\\TextDll.dll");					

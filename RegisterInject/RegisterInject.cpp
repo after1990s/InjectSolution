@@ -4,10 +4,10 @@
 #include "stdafx.h"
 #include "RegisterInject.h"
 
-#define MAX_LOADSTRING 100
+
 
 // Global Variables:
-TCHAR szDll[MAX_LOADSTRING] = _T("D:\\TextDll.dll");					// The title bar text
+
 TCHAR szWindowClass[MAX_LOADSTRING];			// the main window class name
 
 
