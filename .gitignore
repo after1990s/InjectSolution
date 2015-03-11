@@ -47,3 +47,9 @@ InjectSolution.opensdf
 *.obj
 *.pch
 *.log
+*.ipch
+*.idb
+*.ilk
+*.exe
+*.dll
+*.idb

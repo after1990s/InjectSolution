@@ -56,6 +56,23 @@ void InjectProcessToDll(DWORD dwPID)
 	
 	return;
 }
+void InjectMain(void)
+{
+	HANDLE h = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
+	if (h == INVALID_HANDLE_VALUE)
+		throw 3;
+	PROCESSENTRY32 pEntry = { 0 };
+	pEntry.dwSize = sizeof(PROCESSENTRY32);
+	if (Process32First(h, &pEntry) == false)
+		throw 3;
+	do {
+		if (_tccmp(pEntry.szExeFile, g_szInjectProcessName) == 0)
+		{
+			InjectProcessToDll(pEntry.th32ProcessID);
+		}
+	} while (Process32Next(h, &pEntry));
+
+}
 int APIENTRY _tWinMain(_In_ HINSTANCE hInstance,
                      _In_opt_ HINSTANCE hPrevInstance,
                      _In_ LPTSTR    lpCmdLine,
@@ -63,20 +80,7 @@ int APIENTRY _tWinMain(_In_ HINSTANCE hInstance,
 {
 	UNREFERENCED_PARAMETER(hPrevInstance);
 	UNREFERENCED_PARAMETER(lpCmdLine);
-	HANDLE h = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
-	if (h == INVALID_HANDLE_VALUE)
-		throw 3;
-	PROCESSENTRY32 pEntry = { 0 };
-	pEntry.dwSize = sizeof(PROCESSENTRY32);
- 	if (Process32First(h, &pEntry) == false)
-		throw 3;
-	do {
-  		if (_tccmp(pEntry.szExeFile, g_szInjectProcessName) == 0)
-		{
-			InjectProcessToDll(pEntry.th32ProcessID);
-		}
-	} while(Process32Next(h, &pEntry));
-
+	InjectMain();
 	return (int)0;
 }
 

@@ -9,11 +9,15 @@ BOOL APIENTRY DllMain( HMODULE hModule,
 	switch (ul_reason_for_call)
 	{
 	case DLL_PROCESS_ATTACH:
-		::MessageBoxA(NULL, ("I'm Inject successfully"), ("Notice"), MB_OK);
+#ifdef _DEBUG
+		::MessageBoxA(NULL, ("Target Inject successfully"), ("Notice"), MB_OK);
 	case DLL_THREAD_ATTACH:
-		::MessageBoxA(NULL, ("I'm Inject successfully"), ("Notice"), MB_OK);
+		::MessageBoxA(NULL, ("Target Inject successfully"), ("Notice"), MB_OK);
+#endif
 	case DLL_THREAD_DETACH:
 	case DLL_PROCESS_DETACH:
+		break;
+	default:
 		break;
 	}
 	return TRUE;
